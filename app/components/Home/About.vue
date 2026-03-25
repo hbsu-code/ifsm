@@ -1,176 +1,169 @@
 <template>
-    <section class="py-24 bg-white px-8">
-        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <!-- Left: Image card with floating badge -->
-            <div class="relative">
-                <div
-                    class="rounded-3xl overflow-hidden bg-[#1B2A4A]/5 aspect-[4/3]"
+    <div
+        class="min-h-screen bg-[#F5F4F0] w-full font-sans antialiased text-slate-800"
+    >
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+            <header class="mb-16 text-center md:text-left">
+                <h1
+                    class="text-4xl md:text-6xl font-black text-[#1f3a6d] tracking-tight mb-4"
                 >
-                    <!-- <img src="/images/institute-building.jpg" alt="Institute" -->
-                    class="w-full h-full object-cover" @error="e => {
-                    e.target.style.display='none';
-                    e.target.nextElementSibling.style.display='flex' }" />
-                    <div
-                        class="hidden w-full h-full items-center justify-center text-[#1B2A4A]/20 flex-col gap-2"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-16 w-16"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="1"
-                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-2 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
-                            />
-                        </svg>
-                        <span class="text-sm">Institute Building</span>
-                    </div>
-                </div>
+                    Faculty <span class="text-[#C8A84B]">Directory</span>
+                </h1>
+                <p class="text-slate-500 max-w-2xl text-lg leading-relaxed">
+                    Expert educators and forensic specialists dedicated to
+                    academic excellence.
+                </p>
+            </header>
 
-                <!-- Floating badge card -->
+            <div
+                class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full mb-24"
+            >
                 <div
-                    class="absolute -bottom-6 -right-4 bg-white rounded-2xl shadow-xl border border-gray-100 px-5 py-4 flex items-center gap-3"
+                    v-for="member in faculty"
+                    :key="member.name"
+                    class="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
                 >
                     <div
-                        class="w-10 h-10 rounded-xl bg-[#C9A84C]/15 flex items-center justify-center"
+                        class="aspect-square bg-slate-100 overflow-hidden relative"
                     >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-5 w-5 text-[#C9A84C]"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                            />
-                        </svg>
+                        <div
+                            class="absolute inset-0 bg-[#1f3a6d]/5 group-hover:bg-transparent transition-colors"
+                        ></div>
                     </div>
-                    <div>
-                        <p class="text-xs font-bold text-[#1B2A4A]">
-                            NAAC Accredited
-                        </p>
-                        <p class="text-[10px] text-gray-400">
-                            Govt. of Maharashtra
-                        </p>
-                    </div>
-                </div>
 
-                <!-- Floating est. card -->
-                <div
-                    class="absolute -top-4 -left-4 bg-[#1B2A4A] rounded-2xl shadow-xl px-5 py-4"
-                >
-                    <p
-                        class="text-[#C9A84C] text-xs font-bold tracking-widest uppercase"
-                    >
-                        Est.
-                    </p>
-                    <p
-                        class="text-white text-2xl font-bold"
-                        style="font-family: Georgia, serif"
-                    >
-                        1971
-                    </p>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold text-[#1f3a6d] mb-1">
+                            {{ member.name }}
+                        </h3>
+                        <p
+                            class="text-[#C8A84B] font-bold text-xs uppercase tracking-widest mb-4"
+                        >
+                            {{ member.designation }}
+                        </p>
+                        <p
+                            class="text-slate-500 text-sm leading-relaxed line-clamp-2 italic"
+                        >
+                            Specialization: {{ member.specialization }}
+                        </p>
+                    </div>
                 </div>
             </div>
 
-            <!-- Right: Text -->
-            <div>
-                <!-- Tag pill -->
+            <div
+                class="bg-white rounded-[2.5rem] shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden mb-24"
+            >
                 <div
-                    class="inline-flex items-center gap-2 bg-[#1B2A4A]/5 rounded-full px-4 py-1.5 mb-6"
+                    class="p-8 md:p-12 border-b border-slate-50 bg-slate-50/30"
                 >
-                    <span
-                        class="text-xs font-bold text-[#1B2A4A] tracking-wide uppercase"
-                        >About the Institute</span
-                    >
+                    <h2 class="text-2xl font-bold text-[#1f3a6d]">
+                        Examination Schedule
+                    </h2>
                 </div>
 
-                <h2
-                    class="text-4xl font-bold text-[#1B2A4A] leading-snug mb-5"
-                    style="font-family: Georgia, serif"
-                >
-                    Maharashtra's Centre for Forensic Excellence
-                </h2>
-                <p class="text-gray-500 leading-relaxed mb-4 text-[15px]">
-                    The Institute of Forensic Science, Mumbai was established in
-                    1971 under the Government of Maharashtra. It is the state's
-                    premier institution dedicated to forensic science education,
-                    training, and research.
-                </p>
-                <p class="text-gray-500 leading-relaxed mb-8 text-[15px]">
-                    The institute offers academic programmes at undergraduate,
-                    postgraduate, and doctoral levels, producing skilled
-                    forensic professionals serving the criminal justice system
-                    across India.
-                </p>
-
-                <!-- Pillars as clean info cards -->
-                <div class="grid grid-cols-2 gap-3">
-                    <div
-                        v-for="pillar in pillars"
-                        :key="pillar.title"
-                        class="bg-[#F5F4F0] rounded-2xl p-4 hover:bg-[#1B2A4A]/5 transition-colors"
+                <div class="max-w-full">
+                    <table
+                        class="w-full text-left border-collapse min-w-[800px]"
                     >
-                        <div
-                            class="w-8 h-8 rounded-xl bg-[#C9A84C]/15 flex items-center justify-center mb-3"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-4 w-4 text-[#C9A84C]"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
+                        <thead class="bg-[#1f3a6d] text-white">
+                            <tr>
+                                <th
+                                    class="py-5 px-8 text-xs font-bold uppercase tracking-wider"
+                                >
+                                    Sr. No.
+                                </th>
+                                <th
+                                    class="py-5 px-8 text-xs font-bold uppercase tracking-wider"
+                                >
+                                    Programme
+                                </th>
+                                <th
+                                    class="py-5 px-8 text-xs font-bold uppercase tracking-wider"
+                                >
+                                    Eligibility
+                                </th>
+                                <th
+                                    class="py-5 px-8 text-xs font-bold uppercase tracking-wider text-center"
+                                >
+                                    Capacity
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-100">
+                            <tr
+                                v-for="i in 3"
+                                :key="i"
+                                class="hover:bg-slate-50 transition-colors"
                             >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    :d="pillar.icon"
-                                />
-                            </svg>
-                        </div>
-                        <p class="font-bold text-[#1B2A4A] text-sm mb-1">
-                            {{ pillar.title }}
-                        </p>
-                        <p class="text-gray-400 text-xs leading-relaxed">
-                            {{ pillar.text }}
-                        </p>
-                    </div>
+                                <td
+                                    class="py-6 px-8 text-sm font-bold text-slate-300"
+                                >
+                                    0{{ i }}
+                                </td>
+                                <td class="py-6 px-8 font-bold text-[#1f3a6d]">
+                                    B.Sc. Forensic Science
+                                </td>
+                                <td class="py-6 px-8 text-sm text-slate-600">
+                                    HSC in Science Stream
+                                </td>
+                                <td class="py-6 px-8 text-center">
+                                    <span
+                                        class="px-4 py-1.5 bg-slate-100 rounded-full text-xs font-black"
+                                        >50</span
+                                    >
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div
+                class="bg-[#1f3a6d] p-10 md:p-20 rounded-[3rem] text-center relative overflow-hidden shadow-2xl"
+            >
+                <div
+                    class="absolute -right-20 -top-20 w-64 h-64 bg-white/5 rounded-full pointer-events-none"
+                ></div>
+                <div
+                    class="absolute -left-20 -bottom-20 w-64 h-64 bg-[#C8A84B]/10 rounded-full pointer-events-none"
+                ></div>
+
+                <div class="relative z-10">
+                    <h3 class="text-3xl md:text-4xl font-black text-white mb-6">
+                        Ready to apply?
+                    </h3>
+                    <p
+                        class="text-blue-100/70 mb-10 max-w-xl mx-auto leading-relaxed"
+                    >
+                        The admission notification for the 2026 academic year
+                        will be released following the HSC results.
+                    </p>
+                    <button
+                        class="bg-[#C8A84B] hover:bg-[#b8983d] text-white px-10 py-4 rounded-2xl font-bold uppercase tracking-widest transition-all shadow-lg active:scale-95"
+                    >
+                        Download Prospectus
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <script setup>
-const pillars = [
+const faculty = [
     {
-        title: "Our Mission",
-        text: "Impart quality forensic education and produce competent professionals for investigative agencies.",
-        icon: "M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z",
+        name: "Dr. Sunil Yadav",
+        designation: "Assistant Professor",
+        specialization: "Cyber Forensics",
     },
     {
-        title: "Our Vision",
-        text: "Globally recognised centre of excellence in forensic science education and research.",
-        icon: "M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z",
+        name: "Ms. Neha Kharat",
+        designation: "Visiting Faculty",
+        specialization: "Psychology",
     },
     {
-        title: "Research",
-        text: "Cutting-edge research in DNA, toxicology, digital forensics and criminalistics.",
-        icon: "M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z",
-    },
-    {
-        title: "Casework",
-        text: "Supporting Maharashtra Police and CBI with expert forensic analysis and testimony.",
-        icon: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2",
+        name: "Feba Santhosh",
+        designation: "Professor",
+        specialization: "Toxicology",
     },
 ];
 </script>

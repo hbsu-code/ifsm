@@ -1,3 +1,90 @@
+# Navbar
+- Home
+- Abouts us
+  - institute
+  - vision and mission
+  - Govt. resolution
+  - Affiliation
+  - Academic Calendar
+  - Committee
+  - Code of conduct
+  - students achievement
+  - prospectus
+  - college magzine
+  - gov body > organogram
+- Administration
+  - minitry
+  - DHTE
+  - DHE Pune
+  - Programs Outcomes
+- Department
+  - Forensic
+    - Forensic Science
+    - Forensic Chemistry
+    - Forensic Physics
+    - Forensic Biology
+    - Psychology
+    - Digital & Cyber Forensic
+    - Forensic Law
+  - IT
+    - CS
+  - Visiting Faculty
+- Course
+  - B.Sc. Forensic
+  - M.Sc. Forensic
+  - P.G. Diploma
+  - Program Outcomes
+- Admissions
+  - Admission Information
+- Examination
+- Students Corner's
+  - Time Table
+  - Notice Period 
+  - Extra Curricular Activities
+    - NSS
+    - Sports
+    - Cultural  
+  - Facilities
+    - Campus
+    - Library
+    - Auditorium
+    - Hostel
+    - Botanical Garden
+    - Canteen
+  - Cell And Center
+    - Placement Cell
+    - Competitive Exam Cell
+    - Anti Ragging Cell
+    - Anti Sexual Harassment
+    - Students Council
+  - Scholarships
+    - Indian
+    - International
+  - Grievance Redressal
+- NAAC
+  - Certificates
+  - NAAC Peer Team Report
+  - AQAR
+  - SSR
+  - SSR After DVV
+- IQAC
+  - About IQAC
+  - IQAC Composition
+  - IQAC Annual Report
+  - IQAC Committee
+  - IQAC Activities
+  - Minutes of Meeting
+  - Plan of Action
+  - Action Taken Report
+  - Best Practices
+  - Institutional Distinctiveness
+  - SSS
+  - Data Template
+- Downloads 
+
+
+---
+
 About Institute
 
 “Crime is common. Logic is rare. Therefore it is upon the logic rather than upon the crime that you should dwell.”
@@ -62,3 +149,55 @@ For PG Admission: pgadmissions@ifsm.ac.in
 Phone No.: 022-2217645
 
 Website: www.ifsm.ac.in
+
+---
+
+# Programmes Outcomes
+
+B.Sc. Forensic Science
+
+Upon completion of the 3-year B.Sc. Forensic Science program, students will be able to demonstrate an understanding of the fundamental concepts and theories of forensic science, chemical science, physical science, biological science, psychology, computer science, and law.
+
+Students who successfully complete the program will be able to apply scientific principles and methods to the analysis and interpretation of forensic evidence, including crime scene investigation, laboratory analysis, and data interpretation.
+
+Upon graduation, students will be able to communicate effectively, both orally and in writing, about complex forensic science concepts, techniques, and findings to a variety of audiences, including law enforcement officials, attorneys, and the general public.
+
+Graduates will be able to think critically and solve problems related to forensic science, using analytical and logical reasoning skills to identify and evaluate evidence, generate hypotheses, and make informed conclusions.
+
+Upon completion of the program, students will have demonstrated ethical and professional conduct in all aspects of their work, including respect for privacy and confidentiality, adherence to scientific standards and protocols, and awareness of the social and legal implications of forensic evidence.
+
+M.Sc. Forensic Science
+
+Students will be able to demonstrate advanced knowledge and understanding of the fundamental concepts and theories of forensic science, including crime scene science, forensic medicine, and digital and cyber forensics.
+
+Students will be able to apply scientific principles and methods to the analysis and interpretation of forensic evidence, using specialized techniques and equipment related to questioned documents, finger prints, forensic physics, forensic chemistry and toxicology, forensic biology, serology and DNA finger printing, digital and cyber forensics, and IT security.
+
+Students will be able to communicate effectively, both orally and in writing, about complex forensic science concepts, techniques, and findings to a variety of audiences, including law enforcement officials, attorneys, and the general public.
+
+Students will be able to think critically and solve complex problems related to forensic science, using analytical and logical reasoning skills to identify and evaluate evidence, generate hypotheses, and make informed conclusions.
+
+Upon graduation, students will have demonstrated ethical and professional conduct in all aspects of their work, including respect for privacy and confidentiality, adherence to scientific standards and protocols, and awareness of the social and legal implications of forensic evidence.
+
+PGD FSRL
+
+Students will be able to demonstrate a strong foundation in the fundamental concepts and theories of forensic science, including the principles and techniques of evidence collection, preservation, and analysis.
+
+Students will be able to apply scientific principles and methods to the analysis and interpretation of forensic evidence, using specialized techniques related to the fields of forensic science, criminology, and law.
+
+Students will be able to communicate effectively, both orally and in writing, about complex forensic science concepts, techniques, and findings to a variety of audiences, including law enforcement officials, attorneys, and the general public.
+
+Students will be able to think critically and solve problems related to forensic science, using analytical and logical reasoning skills to identify and evaluate evidence, generate hypotheses, and make informed conclusions.
+
+Upon graduation, students will have a comprehensive understanding of the legal and ethical implications of forensic evidence, and will be able to apply this knowledge to their work in the field.
+
+PGD DCFRL
+
+Students will be able to demonstrate a comprehensive understanding of the principles and practices of digital and cyber forensics, including the collection, preservation, and analysis of digital evidence.
+
+Students will be able to apply specialized techniques and tools related to the fields of computer forensics, cyber security, and mobile forensics to identify and interpret digital evidence in a variety of contexts.
+
+Students will be able to analyze and evaluate the legal and ethical issues related to the collection, preservation, and analysis of digital evidence, and will be able to apply this knowledge to their work in the field.
+
+Students will be able to communicate effectively, both orally and in writing, about complex digital and cyber forensic concepts, techniques, and findings to a variety of audiences, including law enforcement officials, attorneys, and the general public.
+
+Upon graduation, students will have the skills and knowledge necessary to work as digital and cyber forensic professionals, with a comprehensive understanding of the field's tools, techniques, and best practices.
