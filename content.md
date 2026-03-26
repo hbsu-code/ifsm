@@ -201,3 +201,91 @@ Students will be able to analyze and evaluate the legal and ethical issues relat
 Students will be able to communicate effectively, both orally and in writing, about complex digital and cyber forensic concepts, techniques, and findings to a variety of audiences, including law enforcement officials, attorneys, and the general public.
 
 Upon graduation, students will have the skills and knowledge necessary to work as digital and cyber forensic professionals, with a comprehensive understanding of the field's tools, techniques, and best practices.
+
+---
+
+# Code of Conduct
+
+
+CODE OF PROFESSIONAL ETHICS (Source: UGC)
+
+    Teachers & Their Responsibilities
+    Teachers & The Students
+    Teachers & Collegues
+    Teachers & Authorities
+    Teaching & Non-Teaching Staff
+    Teachers & Guardians
+    Teachers & Society
+
+TEACHERS AND THEIR RESPONSIBILITIES
+
+Whoever adopts teaching as a profession assumes the obligation to conduct him/her in accordance with the ideal of the profession. A teacher is constantly under the scrutiny of his students and the society at large. Therefore, every teacher should see that there is no incompatibility between his precepts and practice. The National ideals of education which have already been set forth and which he/she should seek to inculcate among students must be his/her own ideals. The profession further requires that the teachers should be calm, patient and communicative by temperament and amiable in disposition.
+
+Teachers should:
+
+    Adhere to a responsible pattern of conduct and demeanor expected of them by the community;
+    Manage their private affairs in a manner consistent with the dignity of the profession;
+    Seek to make professional growth continuous through study and research;
+    Express free and frank opinion by participation at professional meetings, seminars, conferences etc. towards the contribution of knowledge;
+    Maintain active membership of professional organizations and strive to improve education and profession through them;
+    Perform their duties in the form of teaching, tutorial, practical, seminar and research work conscientiously and with dedication;
+    Co-operate and assist in carrying out functions relating to the educational responsibilities of the college and the university such as: assisting in appraising applications for admission, advising and counseling students as well as assisting the conduct of University and college examinations, including supervision, invigilation and evaluation; and
+    Participate in extension, co-curricular and extra-curricular activities including community service.
+
+TEACHERS AND THE STUDENTS
+
+Teachers should:
+
+    Respect the right and dignity of the student in expressing his/her opinion;
+    Deal fairly and impartially with students regardless of their religion, caste, political, economic, social and physical characteristics;
+    Recognize the difference in aptitude and capabilities among students and strive to meet their individual Encourage students to improve their attainments, develop their personalities and at the same time contribute to community welfare; needs;
+    Encourage students to improve their attainments, develop their personalities and at the same time contribute to community welfare;
+    Inculcate among student’s scientific outlook and respect for physical labor and ideals of democracy, patriotism and peace,
+    Be affectionate to the students and not behave in a vindictive manner towards any of them for any reason;
+    Pay attention to only the attainment of the student in the assessment of merit;
+    Make available to the students even beyond their class hours and help and guide students without any remuneration or reward;
+    Aid students to develop and understanding of our national heritage and national goals; and
+    Refrain from inciting students against other students, colleagues or administration.
+
+TEACHERS AND COLLEAGUES
+
+Teachers should:
+
+    Treat other members of the profession in the same manner as they themselves wish to be treated;
+    Speak respectfully of other teachers and render assistance for professional betterment;
+    Refrain from lodging unsubstantiated allegations against colleagues to higher authorities; and
+    Refrain from allowing considerations of caste, creed, religion, race or sex in their professional Endeavour.
+
+TEACHERS AND AUTHORITIES
+
+Teachers should:
+
+    Discharge their professional responsibilities according to the existing rules and adhere to procedures and methods consistent with their profession in initiating steps through their own institutional bodies and/or professional organizations for change of any such rule detrimental to the professional interest;
+    Refrain from undertaking any other employment and commitment including private tuitions and coaching classes which are likely to interfere with their professional responsibilities;
+    Co-operate in the formulation of policies of the institution by accepting various offices and discharge responsibilities which such offices may demand;
+    Co-operate through their organizations in the formulation of policies of the other institutions and accept offices;
+    Co-operate with the authorities for the betterment of the institutions keeping in view the interest and in conformity with dignity of the profession;
+    Should adhere to the conditions of contract;
+    Give and expect due notice before a change of position is made
+    Refrain from availing themselves of leave except on unavoidable grounds and as far as practicable with prior intimation, keeping in view their particular responsibility for completion of academic schedule.
+
+TEACHING AND NON-TEACHING STAFF
+
+    Teachers should treat the non-teaching staff as colleagues and equal partners in a cooperative undertaking, within every educational institution
+    Teachers should help in the function of joint staff-councils covering both teachers and the non-teaching staff.
+
+TEACHERS AND GUARDIANS
+
+Teachers should:
+
+    Try to see through teachers' bodies and organizations, that institutions maintain contact with the guardians, their students, send reports of their performance to the guardians whenever necessary and meet the guardians in meetings convened for the purpose for mutual exchange of ideas and for the benefit of the institution.
+
+TEACHERS AND SOCIETY
+
+Teachers should:
+
+    Recognize that education is a public service and strive to keep the public informed of the educational programs which are being provided;
+    Work to improve education in the community and strengthen the community's moral and intellectual life;
+    Be aware of social problems and take part in such activities as would be conducive to the progress of society and hence the country as a whole;
+    Perform the duties of citizenship, participate in community activities and shoulder responsibilities of public offices;
+    Refrain from taking part in or subscribing to or assisting in any way activities which tend to promote feeling of hatred or enmity among different communities, religions or linguistic groups but actively work for National Integration.
