@@ -8,11 +8,11 @@
             <div class="flex gap-1">
                 <a
                     v-for="link in topLinks"
-                    :key="link"
-                    href="#"
+                    :key="link.label"
+                    :href="link.href"
                     class="px-3 py-1 hover:text-white"
                 >
-                    {{ link }}
+                    {{ link.label }}
                 </a>
             </div>
         </div>
@@ -46,7 +46,7 @@
                     @mouseleave="onNavLeave(item.label)"
                 >
                     <a
-                        href="#"
+                        :href="item.href"
                         class="px-3 py-2 rounded-full text-sm font-medium whitespace-nowrap block transition-colors"
                         :class="
                             openNav === item.label
@@ -75,7 +75,7 @@
                                 @mouseleave="onL1Leave(child.label)"
                             >
                                 <a
-                                    href="#"
+                                    :href="child.href"
                                     class="flex justify-between items-center gap-3 px-4 py-2.5 text-sm font-medium text-[#1B2A4A]/75 hover:text-[#1B2A4A] hover:bg-[#EEF2F9] rounded-lg mx-1.5 transition-all"
                                 >
                                     <span class="flex items-center gap-2.5">
@@ -138,7 +138,7 @@
                                             "
                                         >
                                             <a
-                                                href="#"
+                                                :href="grandchild.href"
                                                 class="flex justify-between items-center gap-3 px-4 py-2.5 text-sm font-medium text-[#1B2A4A]/75 hover:text-[#1B2A4A] hover:bg-[#EEF2F9] rounded-lg mx-1.5 transition-all"
                                             >
                                                 <span
@@ -184,137 +184,262 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const topLinks = ["RTI", "Tenders", "Sitemap"];
+const topLinks = [
+    { label: "RTI", href: "/rti" },
+    { label: "Tenders", href: "/tenders" },
+    { label: "Sitemap", href: "/sitemap" },
+];
 
 const navItems = [
-    { label: "Home" },
+    { label: "Home", href: "/" },
     {
         label: "About Us",
+        href: "/about-us",
         children: [
-            { label: "Institute" },
-            { label: "Vision and Mission" },
-            { label: "Govt. Resolution" },
-            { label: "Affiliation" },
-            { label: "Academic Calendar" },
-            { label: "Committee" },
-            { label: "Code of Conduct" },
-            { label: "Students Achievement" },
-            { label: "Prospectus" },
-            { label: "College Magazine" },
-            { label: "Gov Body", children: [{ label: "Organogram" }] },
+            { label: "Institute", href: "/about-us" },
+            {
+                label: "Vision and Mission",
+                href: "/about-us/vision-and-mission",
+            },
+            {
+                label: "Govt. Resolution",
+                href: "https://web.archive.org/web/20240721052427/https://gr.maharashtra.gov.in/1145/Government-Resolutions",
+            },
+            { label: "Affiliation", href: "/about-us/affiliation" },
+            // { label: "Academic Calendar", href: "/about-us/academic-calendar" },
+            { label: "Committee", href: "/about-us/committee" },
+            { label: "Code of Conduct", href: "/about-us/code-of-conduct" },
+            // {
+            //     label: "Students Achievement",
+            //     href: "/about-us/students-achievement",
+            // },
+            // { label: "Prospectus", href: "/about-us/prospectus" },
+            { label: "College Magazine", href: "/about-us/college-magazine" },
+            {
+                label: "Gov Body",
+                href: "/about-us/gov-body",
+                children: [
+                    {
+                        label: "Organogram",
+                        href: "/about-us/gov-body/organogram",
+                    },
+                ],
+            },
         ],
     },
     {
         label: "Administration",
+        href: "/administration",
         children: [
-            { label: "Ministry" },
-            { label: "DHTE" },
-            { label: "DHE Pune" },
-            { label: "Programs Outcomes" },
+            { label: "Ministry", href: "/administration/ministry" },
+            { label: "DHTE", href: "/administration/dhte" },
+            { label: "DHE Pune", href: "/administration/dhe-pune" },
+            {
+                label: "Programs Outcomes",
+                href: "/administration/programs-outcomes",
+            },
         ],
     },
     {
         label: "Department",
+        href: "/department",
         children: [
             {
                 label: "Forensic",
+                href: "/department/forensic",
                 children: [
-                    { label: "Forensic Science" },
-                    { label: "Forensic Chemistry" },
-                    { label: "Forensic Physics" },
-                    { label: "Forensic Biology" },
-                    { label: "Psychology" },
-                    { label: "Digital & Cyber Forensic" },
-                    { label: "Forensic Law" },
+                    {
+                        label: "Forensic Science",
+                        href: "/department/forensic/forensic-science",
+                    },
+                    {
+                        label: "Forensic Chemistry",
+                        href: "/department/forensic/forensic-chemistry",
+                    },
+                    {
+                        label: "Forensic Physics",
+                        href: "/department/forensic/forensic-physics",
+                    },
+                    {
+                        label: "Forensic Biology",
+                        href: "/department/forensic/forensic-biology",
+                    },
+                    {
+                        label: "Psychology",
+                        href: "/department/forensic/psychology",
+                    },
+                    {
+                        label: "Digital & Cyber Forensic",
+                        href: "/department/forensic/digital-cyber-forensic",
+                    },
+                    {
+                        label: "Forensic Law",
+                        href: "/department/forensic/forensic-law",
+                    },
                 ],
             },
-            { label: "IT", children: [{ label: "CS" }] },
-            { label: "Visiting Faculty" },
+            {
+                label: "IT",
+                href: "/department/it",
+                children: [{ label: "CS", href: "/department/it/cs" }],
+            },
+            { label: "Visiting Faculty", href: "/department/visiting-faculty" },
         ],
     },
     {
         label: "Course",
+        href: "/course",
         children: [
-            { label: "B.Sc. Forensic" },
-            { label: "M.Sc. Forensic" },
-            { label: "P.G. Diploma" },
-            { label: "Program Outcomes" },
+            { label: "B.Sc. Forensic", href: "/course/bsc-forensic" },
+            { label: "M.Sc. Forensic", href: "/course/msc-forensic" },
+            { label: "P.G. Diploma", href: "/course/pg-diploma" },
+            { label: "Program Outcomes", href: "/course/program-outcomes" },
         ],
     },
     {
         label: "Admissions",
-        children: [{ label: "Admission Information" }],
+        href: "/admissions",
+        children: [
+            {
+                label: "Admission Information",
+                href: "/admissions/admission-information",
+            },
+        ],
     },
-    { label: "Examination" },
+    { label: "Examination", href: "/examination" },
     {
         label: "Students Corner",
+        href: "/students-corner",
         children: [
-            { label: "Time Table" },
-            { label: "Notice Period" },
+            { label: "Time Table", href: "/students-corner/time-table" },
+            { label: "Notice Period", href: "/students-corner/notice-period" },
             {
                 label: "Extra Curricular Activities",
+                href: "/students-corner/extra-curricular-activities",
                 children: [
-                    { label: "NSS" },
-                    { label: "Sports" },
-                    { label: "Cultural" },
+                    {
+                        label: "NSS",
+                        href: "/students-corner/extra-curricular-activities/nss",
+                    },
+                    {
+                        label: "Sports",
+                        href: "/students-corner/extra-curricular-activities/sports",
+                    },
+                    {
+                        label: "Cultural",
+                        href: "/students-corner/extra-curricular-activities/cultural",
+                    },
                 ],
             },
             {
                 label: "Facilities",
+                href: "/students-corner/facilities",
                 children: [
-                    { label: "Campus" },
-                    { label: "Library" },
-                    { label: "Auditorium" },
-                    { label: "Hostel" },
-                    { label: "Botanical Garden" },
-                    { label: "Canteen" },
+                    {
+                        label: "Campus",
+                        href: "/students-corner/facilities/campus",
+                    },
+                    {
+                        label: "Library",
+                        href: "/students-corner/facilities/library",
+                    },
+                    {
+                        label: "Auditorium",
+                        href: "/students-corner/facilities/auditorium",
+                    },
+                    {
+                        label: "Hostel",
+                        href: "/students-corner/facilities/hostel",
+                    },
+                    {
+                        label: "Botanical Garden",
+                        href: "/students-corner/facilities/botanical-garden",
+                    },
+                    {
+                        label: "Canteen",
+                        href: "/students-corner/facilities/canteen",
+                    },
                 ],
             },
             {
                 label: "Cell And Center",
+                href: "/students-corner/cell-and-center",
                 children: [
-                    { label: "Placement Cell" },
-                    { label: "Competitive Exam Cell" },
-                    { label: "Anti Ragging Cell" },
-                    { label: "Anti Sexual Harassment" },
-                    { label: "Students Council" },
+                    {
+                        label: "Placement Cell",
+                        href: "/students-corner/cell-and-center/placement-cell",
+                    },
+                    {
+                        label: "Competitive Exam Cell",
+                        href: "/students-corner/cell-and-center/competitive-exam-cell",
+                    },
+                    {
+                        label: "Anti Ragging Cell",
+                        href: "/students-corner/cell-and-center/anti-ragging-cell",
+                    },
+                    {
+                        label: "Anti Sexual Harassment",
+                        href: "/students-corner/cell-and-center/anti-sexual-harassment",
+                    },
+                    {
+                        label: "Students Council",
+                        href: "/students-corner/cell-and-center/students-council",
+                    },
                 ],
             },
             {
                 label: "Scholarships",
-                children: [{ label: "Indian" }, { label: "International" }],
+                href: "/students-corner/scholarships",
+                children: [
+                    {
+                        label: "Indian",
+                        href: "/students-corner/scholarships/indian",
+                    },
+                    {
+                        label: "International",
+                        href: "/students-corner/scholarships/international",
+                    },
+                ],
             },
-            { label: "Grievance Redressal" },
+            {
+                label: "Grievance Redressal",
+                href: "/students-corner/grievance-redressal",
+            },
         ],
     },
     {
         label: "NAAC",
+        href: "/naac",
         children: [
-            { label: "Certificates" },
-            { label: "NAAC Peer Team Report" },
-            { label: "AQAR" },
-            { label: "SSR" },
-            { label: "SSR After DVV" },
+            { label: "Certificates", href: "/naac/certificates" },
+            { label: "NAAC Peer Team Report", href: "/naac/peer-team-report" },
+            { label: "AQAR", href: "/naac/aqar" },
+            { label: "SSR", href: "/naac/ssr" },
+            { label: "SSR After DVV", href: "/naac/ssr-after-dvv" },
         ],
     },
     {
         label: "IQAC",
+        href: "/iqac",
         children: [
-            { label: "About IQAC" },
-            { label: "IQAC Composition" },
-            { label: "IQAC Annual Report" },
-            { label: "IQAC Committee" },
-            { label: "IQAC Activities" },
-            { label: "Minutes of Meeting" },
-            { label: "Plan of Action" },
-            { label: "Action Taken Report" },
-            { label: "Best Practices" },
-            { label: "Institutional Distinctiveness" },
-            { label: "SSS" },
-            { label: "Data Template" },
+            { label: "About IQAC", href: "/iqac/about" },
+            { label: "IQAC Composition", href: "/iqac/composition" },
+            { label: "IQAC Annual Report", href: "/iqac/annual-report" },
+            { label: "IQAC Committee", href: "/iqac/committee" },
+            { label: "IQAC Activities", href: "/iqac/activities" },
+            { label: "Minutes of Meeting", href: "/iqac/minutes-of-meeting" },
+            { label: "Plan of Action", href: "/iqac/plan-of-action" },
+            { label: "Action Taken Report", href: "/iqac/action-taken-report" },
+            { label: "Best Practices", href: "/iqac/best-practices" },
+            {
+                label: "Institutional Distinctiveness",
+                href: "/iqac/institutional-distinctiveness",
+            },
+            { label: "SSS", href: "/iqac/sss" },
+            { label: "Data Template", href: "/iqac/data-template" },
         ],
     },
-    { label: "Downloads" },
+    { label: "Downloads", href: "/downloads" },
 ];
 
 // --- Refs & state ---
