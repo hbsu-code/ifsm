@@ -1,10 +1,10 @@
 <template>
     <footer class="footer">
-        <div class="footer__left">
-            <span class="footer__label">Built by</span>
-            <span class="footer__name">Shubham Chavan</span>
-        </div>
-        <span class="footer__year">© {{ year }}</span>
+        <p class="footer__text">
+            Built by <span class="footer__name">Shubham Chavan</span>
+            <span class="footer__dot">•</span>
+            © {{ year }}
+        </p>
     </footer>
 </template>
 
@@ -18,41 +18,30 @@ const year = computed(() => new Date().getFullYear());
 
 .footer {
     width: 100%;
-    padding: 0.5rem 2rem;
-    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.5rem 0;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
     background: transparent;
 }
 
-.footer__left {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-}
-
-.footer__label {
+.footer__text {
     font-family: "DM Sans", sans-serif;
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    font-size: 12px;
     color: #9e9c94;
+    letter-spacing: 0.08em;
 }
 
 .footer__name {
     font-family: "DM Serif Display", serif;
-    font-size: 15px;
     font-style: italic;
     color: #1a1a18;
+    margin: 0 4px;
 }
 
-.footer__year {
-    font-family: "DM Sans", sans-serif;
-    font-size: 11px;
-    font-weight: 300;
-    letter-spacing: 0.08em;
-    color: #9e9c94;
+.footer__dot {
+    margin: 0 6px;
+    opacity: 0.5;
 }
 </style>

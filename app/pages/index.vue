@@ -1,9 +1,14 @@
 <template>
-    <div class="min-h-screen bg-white font-sans">
+    <div class="min-h-screen font-sans">
         <HomeHero />
+        <News />
+
+        <HomeDirector />
+
         <HomeAbout />
         <Courses />
-        <News />
+
+        <!-- <HomeNews /> -->
         <Faculty />
         <Gallery />
     </div>

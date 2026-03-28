@@ -1,13 +1,13 @@
 <template>
     <section
-        class="bg-[#F5F4F0] min-h-[88vh] flex items-center relative overflow-hidden px-8 py-20"
+        class="min-h-[88vh] flex items-center relative overflow-hidden px-8 py-20"
     >
         <!-- Soft background blobs -->
         <div
-            class="absolute top-[-80px] right-[-80px] w-[420px] h-[420px] rounded-full bg-[#1B2A4A]/5 blur-3xl pointer-events-none"
+            class="absolute top-[-80px] right-[-80px] w-[420px] h-[420px] rounded-full blur-3xl pointer-events-none"
         ></div>
         <div
-            class="absolute bottom-[-60px] left-[-60px] w-[300px] h-[300px] rounded-full bg-[#C9A84C]/10 blur-3xl pointer-events-none"
+            class="absolute bottom-[-60px] left-[-60px] w-[300px] h-[300px] rounded-full blur-3xl pointer-events-none"
         ></div>
 
         <div

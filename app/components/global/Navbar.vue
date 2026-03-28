@@ -231,12 +231,11 @@ const navItems = [
         label: "Administration",
         href: "/administration",
         children: [
-            { label: "Ministry", href: "/administration/ministry" },
             { label: "DHTE", href: "/administration/dhte" },
             { label: "DHE Pune", href: "/administration/dhe-pune" },
             {
-                label: "Programs Outcomes",
-                href: "/administration/programs-outcomes",
+                label: "Programme Outcomes",
+                href: "/administration/program-outcomes",
             },
         ],
     },
@@ -422,7 +421,7 @@ const navItems = [
         label: "IQAC",
         href: "/iqac",
         children: [
-            { label: "About IQAC", href: "/iqac/about" },
+            { label: "About IQAC", href: "/iqac/" },
             { label: "IQAC Composition", href: "/iqac/composition" },
             { label: "IQAC Annual Report", href: "/iqac/annual-report" },
             { label: "IQAC Committee", href: "/iqac/committee" },
