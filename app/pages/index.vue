@@ -1,15 +1,15 @@
 <template>
     <div class="min-h-screen font-sans">
+        <HomeHeroGallery />
         <HomeHero />
+
         <News />
 
         <HomeDirector />
 
-        <HomeAbout />
-        <Courses />
-
-        <!-- <HomeNews /> -->
-        <Faculty />
+        <!-- <HomeAbout /> -->
+        <!-- <Courses /> -->
+        <!-- <Faculty /> -->
         <Gallery />
     </div>
 </template>
