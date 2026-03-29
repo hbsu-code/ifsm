@@ -1,7 +1,10 @@
 <template>
     <footer class="footer">
         <p class="footer__text">
-            Built by <span class="footer__name">Shubham Chavan</span>
+            Built by
+            <a href="https://github.com/piyush-linux" class="footer__name"
+                >Shubham Chavan</a
+            >
             <span class="footer__dot">•</span>
             © {{ year }}
         </p>

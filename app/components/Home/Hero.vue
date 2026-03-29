@@ -1,6 +1,6 @@
 <template>
     <section
-        class="min-h-[88vh] flex items-center relative overflow-hidden px-8 py-20"
+        class="min-h-[88vh] flex items-center relative overflow-hidden px-8 pt-20"
     >
         <!-- Soft background blobs -->
         <div
